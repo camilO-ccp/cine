@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(cine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1950px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #500000;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+}
+
+h2 {
+    color: #661414;
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #500000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#mostrarpelicula {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fffdfd;
+    margin-top: 20px;
+}

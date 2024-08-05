@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CINE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>WELCOME</h1>
+        <h2> __________________________ MENU __________________________ </h2>
+        <p>Queremos hacer tu vista una experiencia mas placentera Para eso ingresa tu edad y selecciona el genero que mas te guste y te <br>
+        recomendamos tu pelicula ideal. </p>
+        
+        <p>Edad :</p>
+        <input type="number" id="Edad"><br>
+        <button onclick="Drama()">Drama</button>
+        <button onclick="Comedia()">Comedia</button>
+        <button onclick="Musical()">Musical</button>
+        <button onclick="Crimen()">Crimen</button>
+
+        <p>Nuestra recomendacion:</p>
+        <p id="mostrarpelicula"></p>
+
+        <script>
+            function Drama(){
+                var Edad = document.getElementById("Edad").value;
+                var mensaje;
+
+                switch (true){
+                    case (Edad < 13):
+                        mensaje = " Casablanca ";
+                        break;
+
+                    case (Edad > 16):
+                        mensaje = " the shawshank ";
+                        break; 
+
+                    default:
+                        mensaje = " Taxi driver "
+                        break;
+                }
+                document.getElementById("mostrarpelicula").textContent = mensaje;
+            }
+
+            function Comedia(){
+                var Edad = document.getElementById("Edad").value;
+                var mensaje;
+
+                switch (true){
+                    case (Edad < 13):
+                        mensaje = " Back to the future ";
+                        break;
+
+                    case (Edad > 16):
+                        mensaje = " the truman show ";
+                        break; 
+
+                    default:
+                        mensaje = " The wolf of wall street "
+                        break;
+                }
+                document.getElementById("mostrarpelicula").textContent = mensaje;
+            }
+
+
+            function Musical(){
+                var Edad = document.getElementById("Edad").value;
+                var mensaje;
+                switch (true) {
+                    case (Edad < 13):
+                        mensaje = " La la land ";
+                        break;
+
+                    case (Edad > 16):
+                        mensaje = " les miserables ";
+                        break; 
+
+                    default:
+                        mensaje = " The rocky horror  "
+                        break;
+                }
+                document.getElementById("mostrarpelicula").textContent = mensaje;
+            }
+
+
+            function Crimen(){
+                var Edad = document.getElementById("Edad").value;
+                var mensaje;
+                switch (true) {
+                    case (Edad < 13):
+                        mensaje = " No hay opciones para esta edad ";
+                        break;
+
+                    case (Edad > 16):
+                        mensaje = " El secreto de tus ojos ";
+                        break; 
+
+                    default:
+                        mensaje = " The godfather "
+                        break;
+                }
+                document.getElementById("mostrarpelicula").textContent = mensaje;
+            }
+        </script>
+
+</body>
+</html>
